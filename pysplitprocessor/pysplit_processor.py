@@ -171,7 +171,7 @@ for period in traj_date_groups:
         print(f'Trajectory for {date} being processed.')
         print(f'Met files for {start} to {end}: {met_files}')
 
-        [trajname, err] = pysplit.generate_singletraj(f'fc_csu_12hr_',hysplit_dir,out_dir,
+        [trajname, err] = pysplit.generate_singletraj(f'this_location_12hr_',hysplit_dir,out_dir,
                                                local_hrrr_dir,met_files,date.year,
                                                date.month,date.day, date.hour,altitude,
                                                coords,trajectory_runtime)
